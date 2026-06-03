@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clarity Scan — Brand Brain</title>
+<title>Clarity Scan — The Creative Standard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -577,6 +577,8 @@ footer{
   .compare-card{flex:1}
   .hero-ctas{flex-direction:row}
   .btn-primary,.btn-ghost{width:auto;display:inline-block;padding:14px 28px}
+  #scan-compare{flex-direction:row}
+  #scan-compare > div{flex:1}
 }
 @media(min-width:720px){
   .container{padding:0 40px}
@@ -588,8 +590,11 @@ footer{
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo"><span>Brand</span> Brain</div>
-  <a href="#cta-main" class="nav-cta">Start the Scan</a>
+  <div class="nav-logo">The <span>Creative</span> Standard</div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="#system" style="font-size:12px;color:var(--text3);text-decoration:none;letter-spacing:.04em;display:none;" id="nav-compare">Both scans ↓</a>
+    <a href="#cta-main" class="nav-cta">Start the Scan</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -871,7 +876,7 @@ footer{
       <div class="time-card">
         <div class="time-badge">Option B</div>
         <div class="time-title">15–20 min/day over a week</div>
-        <div class="time-desc">Answer a few questions in the morning before the day fills up. Come back when you're ready. Your progress holds.</div>
+        <div class="time-desc">Answer a few questions in the morning before the day fills up. Copy your previous answers and pick up where you left off — no account required.</div>
       </div>
     </div>
   </div>
@@ -942,7 +947,8 @@ footer{
     <h2 class="cta-main-h">Start the Clarity Scan.</h2>
     <p class="cta-main-sub">One guided conversation. One profile you can actually use. One finished piece of content — and an action plan for this week.</p>
     <div class="cta-what-you-get">
-      <div class="wyg-item"><span class="wyg-icon">›</span><span>The master prompt — paste into ChatGPT or Claude</span></div>
+      <div class="wyg-item"><span class="wyg-icon">›</span><span>The Custom GPT — open it and start immediately, no setup</span></div>
+      <div class="wyg-item"><span class="wyg-icon">›</span><span>The master prompt — paste into ChatGPT or Claude if you prefer</span></div>
       <div class="wyg-item"><span class="wyg-icon">›</span><span>The Start Here guide</span></div>
       <div class="wyg-item"><span class="wyg-icon">›</span><span>Your complete 11-section Clarity Scan output</span></div>
       <div class="wyg-item"><span class="wyg-icon">›</span><span>One finished content piece</span></div>
@@ -953,8 +959,106 @@ footer{
       <span class="price-num">$39</span>
       <span class="price-label">one-time · no subscription</span>
     </div>
-    <a href="https://chatgpt.com/g/g-6a1c919b53b88191999731f6dde7bd61-clarity-scan-beta" target="_blank" rel="noopener" class="btn-primary">Start the Clarity Scan — $39</a>
+    <a href="YOUR_PAYMENT_LINK" class="btn-primary">Start the Clarity Scan — $39</a>
     <p class="risk-line">No course platform. No software to install. Works with free ChatGPT or Claude.</p>
+    <p style="font-size:12px;color:var(--text4);text-align:center;margin-top:16px;">If you complete the scan and don't see a difference in your AI output, email me. — Brett</p>
+  </div>
+</section>
+
+<!-- TWO-LEVEL SYSTEM -->
+<section id="system" style="background:var(--bg2)">
+  <div class="container">
+    <span class="eyebrow">The two-level system</span>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(22px,5vw,30px);line-height:1.25;color:var(--text);margin-bottom:12px;">
+      The Clarity Scan is the beginning.<br>Not the whole thing.
+    </h2>
+    <p style="font-size:15px;color:var(--text2);line-height:1.75;margin-bottom:32px;max-width:520px;">
+      Most photographers stop at the surface — what they believe, who they're for, how they sound. That's the Clarity Scan. The Big Brain Scan goes underneath: the origin story, the wound that shaped the work, the gift that came out of it, and the north star they've been building toward without naming it.
+    </p>
+
+    <!-- Comparison cards -->
+    <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:36px;" id="scan-compare">
+
+      <div style="background:var(--surface);border:.5px solid var(--border);border-radius:2px;padding:24px;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;flex-wrap:wrap;gap:8px;">
+          <div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:6px;">Level 1</div>
+            <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--text);">Clarity Scan</div>
+          </div>
+          <div style="font-family:'DM Serif Display',serif;font-size:28px;color:var(--gold);">$39</div>
+        </div>
+        <div style="font-size:13px;color:var(--text3);margin-bottom:16px;font-style:italic;">"What do you stand for?"</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:16px;">20–30 minutes. Excavates the brand surface layer: worldview, beliefs, differentiation, voice, and who your work is actually for. Produces an 11-section profile, one finished content piece, and an Import Block for Level 2.</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> How you see the world</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> What you believe</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> What makes you different</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> Who your work is for</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> How you actually sound</div>
+          <div style="font-size:12px;color:var(--text3);display:flex;gap:8px;"><span style="color:var(--text4);font-family:'DM Mono',monospace;font-size:10px;">◌</span> Where it came from</div>
+          <div style="font-size:12px;color:var(--text3);display:flex;gap:8px;"><span style="color:var(--text4);font-family:'DM Mono',monospace;font-size:10px;">◌</span> The wound underneath it</div>
+          <div style="font-size:12px;color:var(--text3);display:flex;gap:8px;"><span style="color:var(--text4);font-family:'DM Mono',monospace;font-size:10px;">◌</span> What you're building toward</div>
+        </div>
+      </div>
+
+      <div style="background:var(--surface2);border:.5px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:2px;padding:24px;position:relative;">
+        <div style="position:absolute;top:-1px;right:16px;background:var(--gold);color:var(--bg);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;padding:3px 10px;border-radius:0 0 2px 2px;">UPGRADE</div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;flex-wrap:wrap;gap:8px;">
+          <div>
+            <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:6px;">Level 2</div>
+            <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--text);">Big Brain Scan</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-family:'DM Serif Display',serif;font-size:28px;color:var(--gold);">$119 <span style="font-size:13px;color:var(--gold-dim);">with Clarity Scan</span></div>
+            <div style="font-size:11px;color:var(--text4);text-decoration:line-through;">$147 standalone</div>
+          </div>
+        </div>
+        <div style="font-size:13px;color:var(--text3);margin-bottom:16px;font-style:italic;">"Why do you stand for it?"</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:16px;">90–120 minutes. Goes underneath the surface into the biography: where the work came from, what difficulty shaped it, the gift that grew from that difficulty, and the north star you've been building toward without naming it. Produces a 12-section discovery narrative and 30-day integration plan.<br><br><span style="color:var(--text3);">If you've done the Clarity Scan, the Import Block you received skips 20–30 minutes of foundation work — the interview starts deeper because the surface is already established.</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> Everything from the Clarity Scan</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> Your origin story — how this work chose you</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> The wound that made you — and what you built from it</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> The shadow — what you judge, and what it reveals</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> The gift only you give — named and connected</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> Your north star — what you've been building toward</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> The brand you've actually been building</div>
+          <div style="font-size:12px;color:var(--text2);display:flex;gap:8px;"><span style="color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;">✓</span> 30-day integration plan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing ladder -->
+    <div style="background:var(--surface);border:.5px solid var(--border);border-radius:2px;padding:20px;margin-bottom:28px;">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:16px;">The recommended path</div>
+      <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;">
+        <div style="padding:12px 16px;border:.5px solid var(--border);border-radius:2px;flex:1;min-width:120px;">
+          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Step 1</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Clarity Scan</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--gold);">$39</div>
+        </div>
+        <div style="padding:0 10px;color:var(--text4);font-size:18px;">+</div>
+        <div style="padding:12px 16px;border:.5px solid var(--gold-dim);border-radius:2px;flex:1;min-width:120px;">
+          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Step 2 (upgrade)</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Big Brain Scan</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--gold);">$119</div>
+        </div>
+        <div style="padding:0 10px;color:var(--text4);font-size:18px;">=</div>
+        <div style="padding:12px 16px;background:rgba(196,162,74,.06);border:.5px solid var(--gold-dim);border-radius:2px;flex:1;min-width:120px;">
+          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Both products</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Full System</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:20px;color:var(--gold);">$158</div>
+        </div>
+      </div>
+      <p style="font-size:12px;color:var(--text4);margin-top:14px;line-height:1.6;">Big Brain Scan standalone is $147. Completing the Clarity Scan first unlocks the $119 upgrade price — and cuts 20–30 minutes off the session. The Clarity Scan also works on its own as a complete product.</p>
+    </div>
+
+    <!-- Secondary CTA -->
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <a href="YOUR_PAYMENT_LINK" class="btn-primary">Start with the Clarity Scan — $39</a>
+      <a href="YOUR_BIG_BRAIN_PAYMENT_LINK" class="btn-ghost">Go straight to the Big Brain Scan — $147</a>
+    </div>
+    <p style="font-size:12px;color:var(--text4);text-align:center;margin-top:12px;">Not sure which? Start with the Clarity Scan. It works on its own — and if you want to go deeper, your $28 upgrade discount is already waiting.</p>
   </div>
 </section>
 
@@ -1004,19 +1108,19 @@ footer{
       That's the whole thing.
     </p>
     <div class="final-cta-wrap">
-      <a href="#cta-main" class="btn-primary">Start the Clarity Scan</a>
+      <a href="YOUR_PAYMENT_LINK" class="btn-primary">Start the Clarity Scan — $39</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-brand">Brand Brain · by The Creative Standard</div>
-  <div class="footer-copy">© 2025 · All rights reserved</div>
+  <div class="footer-brand">Clarity Scan · by The Creative Standard</div>
+  <div class="footer-copy">© 2026 · All rights reserved</div>
 </footer>
 
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <a href="https://chatgpt.com/g/g-6a1c919b53b88191999731f6dde7bd61-clarity-scan-beta" target="_blank" rel="noopener">Start the Clarity Scan — $39</a>
+  <a href="YOUR_PAYMENT_LINK">Start the Clarity Scan — $39</a>
 </div>
 
 <script>
@@ -1044,6 +1148,17 @@ document.querySelectorAll('.pain-item').forEach(el => {
   el.addEventListener('mouseenter', () => el.style.color = 'var(--text)');
   el.addEventListener('mouseleave', () => el.style.color = '');
 });
+
+// Show nav compare link after hero
+const navCompare = document.getElementById('nav-compare');
+if(navCompare) {
+  const heroObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      navCompare.style.display = e.isIntersecting ? 'none' : 'block';
+    });
+  }, {threshold: 0.1});
+  heroObs.observe(hero);
+}
 </script>
 </body>
 </html>
