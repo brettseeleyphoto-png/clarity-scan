@@ -8,22 +8,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:        #f4f0e8;
-  --bg2:       #ede9e0;
-  --bg3:       #e6e2d8;
-  --surface:   #eae6dd;
-  --surface2:  #e0dbd1;
-  --gold:      #8c3624;
-  --gold-dim:  #6e2b1c;
-  --gold-pale: #c46e52;
-  --text:      #1c1814;
-  --text2:     #4a4540;
-  --text3:     #8a857c;
-  --text4:     #b8b3ab;
-  --border:    #d4cfc5;
-  --border2:   #dedad2;
-  --red-mute:  #f5eeeb;
-  --red-text:  #8c3624;
+  --bg:        #0c0b09;
+  --bg2:       #111009;
+  --bg3:       #161410;
+  --surface:   #1a1814;
+  --surface2:  #201e18;
+  --gold:      #c4503a;
+  --gold-dim:  #8c3020;
+  --gold-pale: #e08060;
+  --text:      #f0ece3;
+  --text2:     #b8b099;
+  --text3:     #7a7468;
+  --text4:     #4a4640;
+  --border:    #2a2720;
+  --border2:   #1e1c16;
+  --red-mute:  #3a2020;
+  --red-text:  #c4503a;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;scroll-behavior:smooth}
@@ -61,7 +61,7 @@ body{
 }
 .btn-primary{
   display:block;width:100%;
-  background:var(--text);
+  background:var(--gold);
   color:var(--bg);
   font-family:'Inter',sans-serif;
   font-size:14px;font-weight:600;
@@ -72,7 +72,7 @@ body{
   text-decoration:none;
   transition:background .2s,transform .1s;
 }
-.btn-primary:hover{background:var(--text2);transform:translateY(-1px)}
+.btn-primary:hover{background:var(--gold-pale);transform:translateY(-1px)}
 .btn-ghost{
   display:block;width:100%;
   background:transparent;
@@ -92,7 +92,7 @@ section{padding:64px 0;border-bottom:1px solid var(--border)}
 /* ── NAV ───────────────────────────────────── */
 nav{
   position:sticky;top:0;z-index:100;
-  background:rgba(244,240,232,.94);
+  background:rgba(12,11,9,.92);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
   padding:0 24px;
@@ -107,12 +107,12 @@ nav{
 .nav-logo span{color:var(--gold)}
 .nav-cta{
   font-size:12px;font-weight:600;
-  background:var(--text);color:var(--bg);
+  background:var(--gold);color:var(--bg);
   padding:8px 16px;border-radius:0;
   text-decoration:none;letter-spacing:.03em;
   transition:background .2s;
 }
-.nav-cta:hover{background:var(--text2)}
+.nav-cta:hover{background:var(--gold-pale)}
 
 /* ── HERO ──────────────────────────────────── */
 #hero{
@@ -158,7 +158,7 @@ nav{
 .hero-proof-item{display:flex;flex-direction:column;gap:4px}
 .hero-proof-num{
   font-family:'Cormorant Garamond',serif;
-  font-size:30px;color:var(--text);font-weight:500;
+  font-size:30px;color:var(--gold);font-weight:500;
   line-height:1;
 }
 .hero-proof-label{font-size:11px;color:var(--text3);letter-spacing:.04em}
@@ -464,7 +464,7 @@ nav{
 }
 .price-num{
   font-family:'Cormorant Garamond',serif;
-  font-size:52px;color:var(--text);font-weight:500;
+  font-size:52px;color:var(--gold);font-weight:500;
   line-height:1;
 }
 .price-label{font-size:13px;color:var(--text3)}
@@ -522,7 +522,7 @@ footer{
 /* ── STICKY MOBILE CTA ─────────────────────── */
 .sticky-cta{
   position:fixed;bottom:0;left:0;right:0;
-  background:rgba(244,240,232,.97);
+  background:rgba(12,11,9,.95);
   backdrop-filter:blur(12px);
   padding:12px 24px 20px;
   border-top:1px solid var(--border);
@@ -533,7 +533,7 @@ footer{
 .sticky-cta.visible{transform:translateY(0)}
 .sticky-cta a{
   display:block;
-  background:var(--text);
+  background:var(--gold);
   color:var(--bg);
   text-align:center;
   padding:14px;
@@ -556,6 +556,7 @@ footer{
   .btn-primary,.btn-ghost{width:auto;display:inline-block;padding:14px 28px}
   #scan-compare{flex-direction:row}
   #scan-compare > div{flex:1}
+  #price-cards{flex-direction:row}
 }
 @media(min-width:720px){
   .container{padding:0 40px}
@@ -1005,37 +1006,28 @@ footer{
       </div>
     </div>
 
-    <!-- Pricing ladder -->
-    <div style="background:var(--surface);border:.5px solid var(--border);border-radius:2px;padding:20px;margin-bottom:28px;">
-      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--text4);margin-bottom:16px;">The recommended path</div>
-      <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;">
-        <div style="padding:12px 16px;border:.5px solid var(--border);border-radius:2px;flex:1;min-width:120px;">
-          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Step 1</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Clarity Scan</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);">$39</div>
-        </div>
-        <div style="padding:0 10px;color:var(--text4);font-size:18px;">+</div>
-        <div style="padding:12px 16px;border:.5px solid var(--gold-dim);border-radius:2px;flex:1;min-width:120px;">
-          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Step 2 (upgrade)</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Big Brain Scan</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);">$119</div>
-        </div>
-        <div style="padding:0 10px;color:var(--text4);font-size:18px;">=</div>
-        <div style="padding:12px 16px;background:rgba(140,54,36,.05);border:.5px solid var(--gold-dim);border-radius:2px;flex:1;min-width:120px;">
-          <div style="font-size:11px;color:var(--text3);margin-bottom:4px;">Both products</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);margin-bottom:2px;">Full System</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);">$158</div>
-        </div>
+    <!-- Pricing cards -->
+    <div style="display:flex;flex-direction:column;gap:1px;background:var(--border);margin-bottom:16px;" id="price-cards">
+      <div style="background:var(--surface);padding:24px;flex:1;">
+        <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:12px;">Level 1</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:16px;">Clarity Scan</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;color:var(--gold);line-height:1;margin-bottom:6px;">$39</div>
+        <div style="font-size:12px;color:var(--text3);margin-bottom:20px;">one-time · no subscription</div>
+        <a href="YOUR_PAYMENT_LINK" class="btn-primary">Start the Clarity Scan</a>
       </div>
-      <p style="font-size:12px;color:var(--text4);margin-top:14px;line-height:1.6;">Big Brain Scan standalone is $147. Completing the Clarity Scan first unlocks the $119 upgrade price — and cuts 20–30 minutes off the session. The Clarity Scan also works on its own as a complete product.</p>
+      <div style="background:var(--surface2);padding:24px;flex:1;border-top:2px solid var(--gold);">
+        <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:12px;">Level 2</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text);margin-bottom:16px;">Big Brain Scan</div>
+        <div style="margin-bottom:6px;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;color:var(--gold);line-height:1;">$119</span>
+          <span style="font-size:13px;color:var(--text3);margin-left:8px;">with Clarity Scan</span>
+        </div>
+        <div style="font-size:12px;color:var(--text4);margin-bottom:4px;text-decoration:line-through;">$147 standalone</div>
+        <div style="font-size:12px;color:var(--text3);margin-bottom:20px;">Save $28 — and 20–30 min of session time</div>
+        <a href="YOUR_BIG_BRAIN_PAYMENT_LINK" class="btn-ghost">Go straight to Big Brain Scan — $147</a>
+      </div>
     </div>
-
-    <!-- Secondary CTA -->
-    <div style="display:flex;flex-direction:column;gap:10px;">
-      <a href="YOUR_PAYMENT_LINK" class="btn-primary">Start with the Clarity Scan — $39</a>
-      <a href="YOUR_BIG_BRAIN_PAYMENT_LINK" class="btn-ghost">Go straight to the Big Brain Scan — $147</a>
-    </div>
-    <p style="font-size:12px;color:var(--text4);text-align:center;margin-top:12px;">Not sure which? Start with the Clarity Scan. It works on its own — and if you want to go deeper, your $28 upgrade discount is already waiting.</p>
+    <p style="font-size:12px;color:var(--text4);text-align:center;margin-bottom:0;line-height:1.7;">Not sure which? Start with the Clarity Scan. It works on its own — and if you want to go deeper, your upgrade discount is already waiting.</p>
   </div>
 </section>
 
